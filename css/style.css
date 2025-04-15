@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+:root {
+    --primary-color: #04447e;
+    --secondary-color: #908e8b;
+
+    --highlight-color: #0011ff;
+
+    --text-color: #ffffff;
+}
+
+/* Basic Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-margin: 53px;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    padding-top: 0;
+}
+
+h1, h2, h3, p, a {
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Playpen Sans';
+}
+
+p, a {
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Nav Bar */
+
+/* Modern Tech-Inspired Nav Bar - Larger & Centered */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0A1128; /* Dark Navy Blue */
+    color: #FFFFFF; /* White text for contrast */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 15px 0; /* Add vertical padding to make it taller */
+   }
+  
+   .navbar nav {
+    max-width: 1200px; /* Optional: Limit width for better centering on large screens */
+    margin: 0 auto; /* Center the navigation */
+    padding: 0 20px; /* Add some horizontal padding */
+   }
+  
+   .navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Vertically align items */
+   }
+  
+   .navbar nav ul li {
+    margin: 0 30px; /* Increased horizontal margin for more separation */
+   }
+  
+   .navbar nav ul li a {
+    color: #E0F2F7; /* Light blue/grey for links */
+    text-decoration: none;
+    padding: 15px 20px; /* Increased padding for a larger touch target */
+    display: block;
+    font-size: 1.1em; /* Slightly larger font size */
+    font-weight: 500; /* Slightly lighter bold */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transitions */
+    border-radius: 8px; /* Slightly more rounded corners */
+   }
+  
+   .navbar nav ul li a:hover {
+    background-color: #001F3F; /* Darker blue on hover */
+    color: #B0E0E6; /* Lighter blue on hover */
+   }
+  
+   /* Optional: Add a larger logo or branding */
+   .navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ADD8E6; /* Light blue for logo */
+    margin-right: 30px; /* Adjust margin for logo */
+   }
+  
+   /* Adjustments for smaller screens (optional, but recommended) */
+   @media (max-width: 768px) {
+    .navbar {
+     padding: 10px 0; /* Adjust vertical padding for smaller screens */
+    }
+  
+    .navbar nav ul {
+     flex-direction: column; /* Stack items vertically on smaller screens */
+     align-items: center; /* Center items vertically */
+    }
+  
+    .navbar nav ul li {
+     margin: 10px 0; /* Adjust vertical margin for stacked items */
+     width: 100%; /* Make each item take full width */
+    }
+  
+    .navbar nav ul li a {
+     padding: 12px 15px;
+     width: 80%; /* Adjust width of links */
+     margin: 0 auto; /* Center the links */
+     border-radius: 5px; /* Adjust border-radius for smaller links */
+    }
+  
+    .navbar .logo {
+     font-size: 1.5em;
+     margin-right: 0;
+     margin-bottom: 10px; /* Add margin below logo when stacked */
+     text-align: center; /* Center logo on smaller screens */
+    }
+  
+    .navbar nav {
+     padding: 0 10px; /* Adjust horizontal padding for smaller screens */
+    }
+   }
+
+/* Home Style Section*/
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding-top: 8em;
+    padding-bottom: 7em;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(2) rotate(40)'><rect x='0' y='0' width='100%' height='100%' fill='%2304447eff'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='1.5' stroke='%23000000ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+
+/* Styling for the home content container */
+.home-content {
+    max-width: 900px;
+}
+
+/* Styling for the name title */
+.name-title {
+    font-size: 4.5em;
+    font-weight: bold;
+    font-family: 'Playpen Sans';
+    margin-bottom: 10px;
+}
+
+/* Styling for the role badge */
+.role-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff; /* Blue background for badge */
+    color: #fff; /* White text color for badge */
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling for the description paragraph */
+.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-family: 'Sawarabi Mincho', serif;
+    text-align: justify;
+    max-width: 80vw;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    padding: 0 0.5em;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+/* Skills */
+
+#skills {
+    border-radius: 5em;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#skills h2 {
+    font-size: 5em;
+    color: white;
+    padding-top: 0.5em;
+}
+
+.skill h3{
+    color: white;
+    padding-bottom: 0.5em;
+}
+
+.skill p {
+    color: var(--secondary-color);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    max-width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1em;
+    align-items: center;
+}
+
+.skill img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Portfolio SECTION */
+
+#portfolio {
+    padding-bottom: 3em;
+    text-align: center;
+    background-color: var(--primary-color);
+
+    /* BACKGROUND IMAGE */
+background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='160' height='160' patternTransform='scale(2) rotate(40)'><rect x='0' y='0' width='100%' height='100%' fill='%2304447eff'/><path d='M121.5 39.5V9.169c0-2.827 1.724-4.707 3.473-5.602l.707-.362c2.086-1.068 4.702-.631 6.359 1.026l1.985 1.985c1.349 1.349 3.235 2.018 5.14 2.128 12.336 0 12.336-18.505 0-18.505M40.75 39.499V9.17c0-2.827-1.724-4.707-3.473-5.602l-.707-.362c-2.086-1.068-4.702-.631-6.359 1.026l-1.985 1.985c-1.349 1.349-3.236 2.018-5.14 2.128-12.336 0-12.336-18.505 0-18.505m146.575 111.248c0-12.337-18.505-12.337-18.505 0 .11 1.904.78 3.79 2.128 5.139l1.985 1.985c1.657 1.657 2.094 4.273 1.026 6.36l-.362.706c-.895 1.75-2.775 3.474-5.602 3.474l-30.33-.001m49.66-63.086c0 12.336-18.505 12.336-18.505 0 .11-1.904.78-3.791 2.128-5.14l1.985-1.985c1.657-1.657 2.094-4.273 1.026-6.359l-.362-.707c-.895-1.749-2.775-3.474-5.602-3.473h-30.33m19.162 130.344c12.337 0 12.337-18.505 0-18.505-1.631 0-3.99.98-5.139 2.128l-1.985 1.985c-1.656 1.656-4.274 2.094-6.36 1.027l-.706-.362c-2.086-1.069-3.474-3.258-3.474-5.602v-34.302l.001-26.228c0-2.344-1.427-4.458-3.473-5.602l-.707-.361a5.83 5.83 0 00-6.36 1.026l-1.984 1.985c-1.144 1.152-3.508 2.128-5.14 2.128-12.336 0-12.336-18.505 0-18.505 1.904.11 3.715.86 5.14 2.128l1.985 1.985a5.812 5.812 0 006.359 1.026l.707-.362c1.287-1.485 3.473-2.775 3.473-5.602v-30.33M23.086 168.343c-12.336 0-12.336-18.505 0-18.505 1.632 0 3.992.98 5.14 2.128l1.985 1.985c1.656 1.656 4.274 2.094 6.359 1.027l.707-.362c2.086-1.069 3.474-3.258 3.474-5.602l-.001-34.302V88.485c0-2.344 1.387-4.533 3.473-5.602l.707-.361c2.085-1.068 4.703-.63 6.359 1.026l1.985 1.985c1.148 1.148 3.508 2.128 5.14 2.128 12.336 0 12.336-18.505 0-18.505-1.905.11-3.791.78-5.14 2.128l-1.985 1.985c-1.657 1.657-4.273 2.094-6.36 1.026l-.706-.362c-1.75-.895-3.474-2.775-3.474-5.602v-30.33m80.75 80.749H91.17c-2.827 0-4.707 1.724-5.602 3.473l-.362.707c-1.068 2.086-.631 4.702 1.026 6.359l1.985 1.985c1.349 1.349 2.018 3.236 2.128 5.14 0 12.336-18.505 12.336-18.505 0 0-1.632.98-3.992 2.128-5.14l1.985-1.985c1.656-1.656 2.094-4.274 1.026-6.359l-.361-.707c-1.069-2.086-3.258-3.474-5.602-3.473h-60.53c-2.344 0-4.533-1.387-5.602-3.473l-.362-.707c-1.067-2.085-.63-4.703 1.027-6.359l1.985-1.985c1.148-1.148 2.128-3.508 2.128-5.14 0-12.336-18.505-12.336-18.505 0M121.5 38H91.169c-2.827 0-4.707-1.724-5.602-3.473l-.362-.707c-1.068-2.086-.631-4.702 1.026-6.359l1.985-1.985c1.349-1.349 2.018-3.235 2.128-5.14C90.344 8 71.84 8 71.84 20.337c0 1.632.977 3.994 2.128 5.14.663.66 1.343 1.305 1.985 1.985 1.608 1.703 2.003 4.23 1.026 6.36-.11.24-.233.474-.361.706C75.48 36.577 73.359 38 71.015 38H36.712L10.485 38c-2.344 0-4.533 1.387-5.602 3.473-.12.236-.24.471-.362.707-1.067 2.085-.63 4.703 1.027 6.36l1.985 1.984c1.148 1.148 2.128 3.508 2.128 5.14C9.66 68-8.844 68-8.844 55.664'  stroke-width='1.5' stroke='%23000000ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+#portfolio h2 {
+    padding: 1em;
+    font-size: 5em;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: rgb(41, 41, 41);
+    
+    border-radius: 2em;
+    padding: 20px;
+    max-width: 450px;
+    text-align: left;
+    height: max-content;
+}
+
+.project p {
+    padding: 1em 0 0.5em 0;
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+.project img {
+    width: -webkit-fill-available;
+    border-radius: 3em;
+    min-width: 450px;
+    transition: transform 0.5s;
+}
+
+.project img:hover {
+    transform: scale(1.03);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: white;
+}
+
+.tags {
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: #0A1128;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: white;
+    padding: 1em 0 1em 0;
+}
+
+#contact p {
+    color: var(--secondary-color);
+    padding: 0 3em 1em 3em;
+}
+
+#contact .social-icons {
+    padding: 1em 0;
+}
+
+#contact a {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.social-icons a *{
+    color: white;
+}
+
+
+/* Responsive adjustments (optional) */
+@media (max-width: 850px) {
+    .home-section {
+        padding-top: 5em;
+        padding: 30px;
+    }
+
+    .name-title {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+  }
+

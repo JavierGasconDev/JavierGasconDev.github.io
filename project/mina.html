@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinaVR</title>
+    <link rel="icon" href="../assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/mediaquery-project.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="../assets/resume/résumé.pdf">Résumé</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project">
+        <div class="container">
+            <h1>MinaVR</h1>
+
+            <div class="project-info">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="../assets/icons/itchio.svg" alt="Itch.io MinaVR"></a>
+                    <a href="#" class="social-icon"><img src="../assets/icons/youtube.svg" alt="Youtube MinaVR"></a>
+                    </div>
+                <div class="info-item">
+                    <p>Primary Role: <b>VR Developer</b></p>
+                </div>
+            </div>
+            <span class="tags">
+                <span class="tag">Unreal Engine</span>
+                <span class="tag">VR</span>
+                <span class="tag">C++</span>
+                <span class="tag">Game Development</span>
+            </span>
+
+            <p class="project-description">
+                <b>MinaVR</b> is an immersive virtual reality experience developed in Unreal Engine, designed to simulate the challenging and rewarding work of mining. Players don a VR headset and become miners, tasked with extracting valuable resources from a dynamic and interactive environment. The game emphasizes realistic physics, precise tool handling, and strategic decision-making in a safe, yet engaging, virtual setting.
+            </p>
+
+            <p class="project-description">
+                Built using <b>Unreal Engine</b>, MinaVR leverages the engine's powerful rendering capabilities and VR support to deliver a convincing and captivating experience. The project was developed with a focus on optimizing performance for smooth VR gameplay while maintaining a high level of visual fidelity.
+            </p>
+
+            <div class="video-wrapper">
+                <iframe width="746" height="420" src="https://www.youtube.com/watch?v=IHN6LxXFsMw" title="MinaVR Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <h2>My Contributions</h2>
+            <div class="contributions">
+
+                <div class="contribution-item">
+                    <h3>VR Interaction System</h3>
+                    <span class="tags">
+                        <span class="tag">Unreal Engine</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">VR</span>
+                    </span>
+                    <p>
+                        I designed and implemented the core VR interaction system, allowing players to naturally interact with the mining environment and tools. This involved developing realistic hand tracking and physics-based interactions for actions such as:
+                    </p>
+                    <ul>
+                        <li>   <b>Tool Handling:</b>  Picking up, wielding, and manipulating various mining tools (pickaxes, drills, etc.) with precise control.</li>
+                        <li>   <b>Resource Extraction:</b>  Breaking rocks, collecting minerals, and managing resources within the VR space.</li>
+                        <li>   <b>Environmental Interaction:</b>  Navigating the mine, operating machinery, and interacting with dynamic elements like levers and buttons.</li>
+                    </ul>
+                    <p>
+                        The system was built with extensibility in mind, allowing for easy addition of new tools and interaction types.
+                    </p>
+                    <img src="../assets/projects/minavr/interaction.png" alt="VR Interaction"/>
+                </div>
+
+                <div class="contribution-item">
+                    <h3>Procedural Environment Generation</h3>
+                    <span class="tags">
+                        <span class="tag">Unreal Engine</span>
+                        <span class="tag">Blueprint</span>
+                        <span class="tag">Procedural Generation</span>
+                    </span>
+                    <p>
+                        I developed a procedural generation system to create diverse and replayable mine environments. This system utilized Unreal Engine's Blueprints to:
+                    </p>
+                    <ul>
+                        <li>   <b>Varying Cave Layouts:</b>  Generate unique cave networks with different sizes, shapes, and complexities.</li>
+                        <li>   <b>Resource Distribution:</b>  Dynamically place mineral deposits, hazards, and points of interest throughout the mine.</li>
+                        <li>   <b>Environmental Assets:</b>  Populate the environment with rocks, debris, and other details to enhance realism.</li>
+                    </ul>
+                    <p>
+                        This ensured that each playthrough offered a fresh and challenging experience for the player.
+                    </p>
+                    <img src="../assets/projects/minavr/generation.png" alt="Procedural Generation"/>
+                </div>
+
+                <div class="contribution-item">
+                    <h3>Performance Optimization for VR</h3>
+                    <span class="tags">
+                        <span class="tag">Unreal Engine</span>
+                        <span class="tag">Optimization</span>
+                        <span class="tag">VR</span>
+                    </span>
+                    <p>
+                        Given the demanding nature of VR, I focused on optimizing the game to ensure smooth and comfortable performance. This involved:
+                    </p>
+                    <ul>
+                        <li>   <b>Reducing Draw Calls:</b>  Merging meshes and optimizing material complexity to minimize the number of draw calls.</li>
+                        <li>   <b>Level Streaming:</b>  Implementing level streaming to dynamically load and unload sections of the mine, reducing memory usage.</li>
+                        <li>   <b>VR Specific Optimizations:</b>  Utilizing VR-specific rendering techniques to maximize frame rate and minimize latency.</li>
+                    </ul>
+                    <p>
+                        These optimizations were crucial for delivering a high-quality VR experience without causing motion sickness or performance issues.
+                    </p>
+                    <img src="../assets/projects/minavr/optimization.png" alt="Performance Optimization"/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-text">Feel free to reach out, I'll get back to you as soon as possible: <a href="mailto:javiergascon@email.com">javiergascon@email.com</a></p>
+        <p class="contact-text">You can also find me on my other social platforms:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/javier-gascon-dev/" class="social-icon"><img src="../assets/icons/linkedin-white.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/JavierGasconDev" class="social-icon"><img src="../assets/icons/github-white.svg" alt="GitHub"></a>
+            </div>
+        <p>Copyright © 2025 by Javier Gascon | All images, logos and names are used with permission</p>
+    </section>
+</body>
+</html>

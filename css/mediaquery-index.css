@@ -1,0 +1,58 @@
+/* Media Queries */
+
+@media (max-width: 699px) { /* Tablet */
+    * {
+        scroll-margin: 106px;
+    }
+    
+    body {
+        padding-top: 53px;
+    }
+
+    .project {
+        max-width: 80vw;
+    }
+
+    .project img {
+        min-width: 100%;
+    }
+
+    .project h3 {
+        margin: 10px 0 0 0;
+    }
+
+    .tag {
+        margin: 10px 10px 0 0;
+    }
+
+    .home-section {
+        padding-bottom: 5em;
+    }
+
+    #portfolio {
+        padding-top: 5em;
+    }
+}
+
+@media (max-width: 418px) { /* Mobile */
+    * {
+        scroll-margin: 159px;
+    }
+    
+    body {
+        padding-top: 106px;
+    }
+
+    .description {
+        max-width: 100%;
+        margin: 30px;
+    }
+
+    .home-section {
+        padding-bottom: 3em;
+    }
+
+    #portfolio {
+        padding-top: 3em;
+    }
+}
