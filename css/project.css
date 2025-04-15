@@ -2,7 +2,7 @@
     --primary-color: #eddbc4;
     --secondary-color: #908e8b;
 
-    --highlight-color: #bd5a63;
+    --highlight-color: #1c99ff;
 
     --text-color: #ffffff;
 }
@@ -71,56 +71,87 @@ h2 {
 
 /* Contribution */
 
+/* Contribution - Modern Redounded Style (Fixed Width, Text Margin, Single Row) */
+
 .contributions {
     display: flex;
-    gap: 3em;
+    flex-direction: column; /* Stack items vertically */
+    gap: 2em;
     padding-bottom: 3em;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center; /* Center items horizontally */
 }
 
 .contribution-item {
     background-color: #333;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 50%;
-    min-width: 800px;
+    border-radius: 12px;
+    padding: 25px;
+    width: 800px; /* Fixed width */
     text-align: left;
-    height: max-content;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contribution-item p {
-    padding: 1em 0 0.5em 0;
-    text-align: justify;
+    padding: 0.75em 0 0.5em 1.5em; /* Left text margin */
+    text-align: left;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
 }
 
-.contribution-item p, .contribution-item ul li {
-    color: var(--secondary-color)
+.contribution-item p,
+.contribution-item ul li {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.contribution-item img, .contribution-item video {
-    width: 100%;
-    border-radius: 8px;
-    min-width: 450px;
-    margin: 1em 0 0 0;
+.contribution-item img,
+.contribution-item video {
+    width: calc(100% - 1.5em); /* Adjust width for text margin */
+    border-radius: 10px;
+    min-width: 0;
+    margin: 1em 0 0 1.5em; /* Align with text margin */
+    display: block;
 }
 
 .contribution-item h3 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 1.5em; /* Align with text margin */
 }
 
 .contribution-item video {
-    max-width: 100%;
+    max-width: calc(100% - 1.5em); /* Adjust max-width for text margin */
+    border-radius: 10px;
+    margin-left: 1.5em; /* Align with text margin */
 }
 
 .sketch-img {
     display: flex;
-    gap: 1.5em;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-left: 1.5em; /* Align with text margin */
 }
 
 .sketch-img img {
-    width: 33%;
-    min-width: 0px;
+    width: calc(33% - 1em);
+    min-width: 150px;
+    border-radius: 8px;
+}
+
+.contribution-item ul {
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.contribution-item ul li {
+    padding: 0.3em;
+}
+
+
+/* Media Query for smaller screens to handle fixed width */
+@media (max-width: 850px) {
+    .contribution-item {
+        width: 95%; /* Adjust width for smaller screens */
+    }
 }
