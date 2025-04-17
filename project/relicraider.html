@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relic Raider</title>
+    <link rel="icon" href="../assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/mediaquery-project.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#contributions">Work</a></li>
+                <li><a href="../assets/resume/resume_JavierGasconPinedo.pdf">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.querySelector('.navbar nav');
+
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Optional: Close the menu when a link is clicked (for smoother navigation)
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            });
+        </script>
+    </header>
+
+    <section id="project">
+        <div class="container">
+            <h1>Relic Raider</h1>
+
+            <div class="project-info">
+                <div class="social-icons">
+                    <a href="https://darken-studios.itch.io/relic-raider" class="social-icon"><img src="../assets/icons/itchio.svg" alt="Itch.io Relic Raider"></a>
+                    <a href="https://www.youtube.com/watch?v=ZtV1MS-uQWY" class="social-icon"><img src="../assets/icons/youtube.svg" alt="Youtube Relic Raider"></a>
+                </div>
+                <div class="info-item">
+                    <p>Project Type: <b>University Group Project</b></p>
+                </div>
+                <div class="info-item">
+                    <p>Role: <b>Engine Programmer, Gameplay Programmer</b></p>
+                </div>
+            </div>
+            <span class="tags">
+                <span class="tag">Custom Game Engine (From Scratch)</span>
+                <span class="tag">C++</span>
+                <span class="tag">Game Development</span>
+                <span class="tag">Engine Development</span>
+                <span class="tag">Zelda-like</span>
+            </span>
+
+            <p class="project-description">
+                <b>Relic Raider</b> was a challenging and rewarding university group project focused on the creation of a custom 3D game engine built from scratch using <b>C++</b>. This engine was then used to develop a fully playable video game with mechanics inspired by <b>Zelda: Link's Awakening</b>. The project involved a deep understanding of low-level programming concepts, game engine architecture, and collaborative teamwork to bring a complex vision to life.
+            </p>
+
+            <p class="project-description">
+                Our custom engine handled core functionalities such as rendering, input management, collision detection, and basic game object management. Developing the game on top of this engine provided invaluable experience in understanding the inner workings of game development and the crucial interplay between engine and game code.
+            </p>
+
+            <div class="video-wrapper">
+                <iframe width="1119" height="630" src="https://www.youtube.com/embed/ZtV1MS-uQWY?si=WtiS1VkzRuWoPc4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h2>Core Development Work</h2>
+            <div class="contributions" id="contributions">
+
+                <div class="contribution-item">
+                    <h3>Custom Game Engine Development</h3>
+                    <span class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Game Engine Architecture</span>
+                        <span class="tag">Rendering</span>
+                        <span class="tag">Input</span>
+                        <span class="tag">Collision</span>
+                    </span>
+                    <p>
+                        As part of the team, my contributions to the custom game engine included:
+                    </p>
+                    <ul>
+                        <li> <b>Input Management:</b> Developing the input system to capture keyboard and potentially gamepad inputs, and providing an interface for the game logic to access these inputs.</li>
+                        <li> <b>Collision Detection:</b> Implementing a fundamental collision detection system to handle interactions between game objects. This likely involved AABB (Axis-Aligned Bounding Box) collision detection.</li>
+                        <li> <b>Game Object Management:</b> Contributing to the architecture for managing game entities, their properties, and their lifecycle within the engine.</li>
+                    </ul>
+                    <img src="../assets/projects/relicraider/engine_architecture_concept.png" alt="Relic Raider Engine Architecture Concept (Conceptual)"/>
+                </div>
+
+                <div class="contribution-item">
+                    <h3>Gameplay Mechanics Implementation</h3>
+                    <span class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Game Logic</span>
+                        <span class="tag">Character Control</span>
+                        <span class="tag">World Interaction</span>
+                        <span class="tag">Zelda-like Mechanics</span>
+                    </span>
+                    <p>
+                        My work also extended to developing specific gameplay mechanics for Relic Raider, drawing inspiration from Zelda: Link's Awakening:
+                    </p>
+                    <ul>
+                        <li> <b>Character Control:</b> Implementing the player character's movement, and basic actions using the engine's input system.</li>
+                        <li> <b>World Interaction:</b> Developing systems for interacting with the game world, such as object manipulation, item collection, and potentially basic puzzle elements.</li>
+                        <li> <b>Combat System:</b> Implementing a rudimentary combat system, allowing the player to interact with enemies.</li>
+                        <li> <b>Level Integration:</b> Working on integrating level designs and assets into the game using the custom engine.</li>
+                    </ul>
+                    <p>
+                        This required translating the design concepts into functional C++ code that interacted with the underlying game engine.
+                    </p>
+                    <img src="../assets/projects/relicraider/gameplay_screenshot_concept.png" alt="Relic Raider Gameplay Screenshot Concept (Conceptual)"/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p class="contact-text">
+            You can reach me via email at:
+            <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/icons/linkedin-white.svg" alt="LinkedIn">
+            </a>
+        </div>
+
+        <p class="copyright">
+            © 2025 Javier Gascón Pinedo. All rights reserved.
+        </p>
+    </section>
+</body>
+</html>
