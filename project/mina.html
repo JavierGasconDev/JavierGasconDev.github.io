@@ -19,6 +19,31 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.querySelector('.navbar nav');
+    
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+    
+                // Optional: Close the menu when a link is clicked (for smoother navigation)
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            });
+        </script>
     </header>
 
     <section id="project">
@@ -28,7 +53,7 @@
             <div class="project-info">
                 <div class="social-icons">
                     <a href="#" class="social-icon"><img src="../assets/icons/itchio.svg" alt="Itch.io MinaVR"></a>
-                    <a href="#" class="social-icon"><img src="../assets/icons/youtube.svg" alt="Youtube MinaVR"></a>
+                    <a href="https://www.youtube.com/watch?v=IHN6LxXFsMw" class="social-icon"><img src="../assets/icons/youtube.svg" alt="Youtube MinaVR"></a>
                     </div>
                 <div class="info-item">
                     <p>Primary Role: <b>VR Developer</b></p>
@@ -50,8 +75,9 @@
             </p>
 
             <div class="video-wrapper">
+                <p class="video-description"><b>Note:</b> This gameplay footage was recorded on Meta Quest during a class session, which may result in limited video quality.</p>
                 <iframe width="1119" height="630" src="https://www.youtube.com/embed/IHN6LxXFsMw?si=-Gd_XvHcivt69jYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
-
+                
             <h2>Core Development Work</h2>
             <div class="contributions" id="contributions">
 
@@ -63,38 +89,28 @@
                         <span class="tag">VR</span>
                     </span>
                     <p>
-                        I designed and implemented the core VR interaction system, allowing players to naturally interact with the mining environment and tools. This involved developing realistic hand tracking and physics-based interactions for actions such as:
+                        I designed and implemented the core VR interaction system, allowing players to naturally interact with the mining environment and tools. This involved developing realistic interactions for actions such as:
                     </p>
                     <ul>
-                        <li>   <b>Tool Handling:</b>  Picking up, wielding, and manipulating various mining tools (pickaxes, drills, etc.) with precise control.</li>
+                        <li>   <b>Tool Handling:</b>  Picking up, wielding, and manipulating pickaxes with precise control.</li>
                         <li>   <b>Resource Extraction:</b>  Breaking rocks, collecting minerals, and managing resources within the VR space.</li>
-                        <li>   <b>Environmental Interaction:</b>  Navigating the mine, operating machinery, and interacting with dynamic elements like levers and buttons.</li>
+                        <li>   <b>Environmental Interaction:</b>  Navigating the mine.</li>
                     </ul>
                     <p>
                         The system was built with extensibility in mind, allowing for easy addition of new tools and interaction types.
                     </p>
-                    <img src="../assets/projects/minavr/interaction.png" alt="VR Interaction"/>
                 </div>
 
                 <div class="contribution-item">
-                    <h3>Procedural Environment Generation</h3>
-                    <span class="tags">
-                        <span class="tag">Unreal Engine</span>
-                        <span class="tag">Blueprint</span>
-                        <span class="tag">Procedural Generation</span>
-                    </span>
+                <h3>Realistic Rock Mining Collisions</h3>
+                        <span class="tags">
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">Blueprint</span>
+                            <span class="tag">Physics</span>
+                        </span>
                     <p>
-                        I developed a procedural generation system to create diverse and replayable mine environments. This system utilized Unreal Engine's Blueprints to:
+                        I implemented the collision logic between the pickaxe and the rocks to simulate a realistic mining experience. This involved ensuring that breaking a rock required a variable number of hits, determined randomly, to enhance the sense of effort and realism in resource extraction.
                     </p>
-                    <ul>
-                        <li>   <b>Varying Cave Layouts:</b>  Generate unique cave networks with different sizes, shapes, and complexities.</li>
-                        <li>   <b>Resource Distribution:</b>  Dynamically place mineral deposits, hazards, and points of interest throughout the mine.</li>
-                        <li>   <b>Environmental Assets:</b>  Populate the environment with rocks, debris, and other details to enhance realism.</li>
-                    </ul>
-                    <p>
-                        This ensured that each playthrough offered a fresh and challenging experience for the player.
-                    </p>
-                    <img src="../assets/projects/minavr/generation.png" alt="Procedural Generation"/>
                 </div>
 
                 <div class="contribution-item">
@@ -108,29 +124,37 @@
                         Given the demanding nature of VR, I focused on optimizing the game to ensure smooth and comfortable performance. This involved:
                     </p>
                     <ul>
-                        <li>   <b>Reducing Draw Calls:</b>  Merging meshes and optimizing material complexity to minimize the number of draw calls.</li>
                         <li>   <b>Level Streaming:</b>  Implementing level streaming to dynamically load and unload sections of the mine, reducing memory usage.</li>
                         <li>   <b>VR Specific Optimizations:</b>  Utilizing VR-specific rendering techniques to maximize frame rate and minimize latency.</li>
                     </ul>
                     <p>
                         These optimizations were crucial for delivering a high-quality VR experience without causing motion sickness or performance issues.
                     </p>
-                    <img src="../assets/projects/minavr/optimization.png" alt="Performance Optimization"/>
                 </div>
+
+                
             </div>
+            
         </div>
 
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p class="contact-text">Feel free to reach out, I'll get back to you as soon as possible: <a href="mailto:javiergascon@email.com">javiergascon@email.com</a></p>
-        <p class="contact-text">You can also find me on my other social platforms:</p>
+        <h2>Contact</h2>
+        <p class="contact-text">
+            You can reach me via email at:
+            <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>
+        </p>
+    
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/javier-gascon-dev/" class="social-icon"><img src="../assets/icons/linkedin-white.svg" alt="LinkedIn"></a>
-            <a href="https://github.com/JavierGasconDev" class="social-icon"><img src="../assets/icons/github-white.svg" alt="GitHub"></a>
-            </div>
-        <p>Copyright © 2025 by Javier Gascon | All images, logos and names are used with permission</p>
+            <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/icons/linkedin-white.svg" alt="LinkedIn">
+            </a>
+        </div>
+    
+        <p class="copyright">
+            &copy; 2025 Javier Gascón Pinedo. All rights reserved.
+        </p>
     </section>
 </body>
 </html>

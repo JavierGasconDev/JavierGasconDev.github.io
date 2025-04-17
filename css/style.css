@@ -99,41 +99,80 @@ h2 {
     color: #ADD8E6; /* Light blue for logo */
     margin-right: 30px; /* Adjust margin for logo */
    }
-  
-   /* Adjustments for smaller screens (optional, but recommended) */
-   @media (max-width: 768px) {
-    .navbar {
-     padding: 10px 0; /* Adjust vertical padding for smaller screens */
-    }
-  
-    .navbar nav ul {
-     flex-direction: column; /* Stack items vertically on smaller screens */
-     align-items: center; /* Center items vertically */
-    }
-  
-    .navbar nav ul li {
-     margin: 10px 0; /* Adjust vertical margin for stacked items */
-     width: 100%; /* Make each item take full width */
-    }
-  
-    .navbar nav ul li a {
-     padding: 12px 15px;
-     width: 80%; /* Adjust width of links */
-     margin: 0 auto; /* Center the links */
-     border-radius: 5px; /* Adjust border-radius for smaller links */
-    }
-  
-    .navbar .logo {
-     font-size: 1.5em;
-     margin-right: 0;
-     margin-bottom: 10px; /* Add margin below logo when stacked */
-     text-align: center; /* Center logo on smaller screens */
-    }
-  
+  /* Hamburger Menu Styles (Initially Hidden) */
+.hamburger {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: none;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 5px 0;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media Query for Mobile Resolution */
+@media (max-width: 768px) {
     .navbar nav {
-     padding: 0 10px; /* Adjust horizontal padding for smaller screens */
+        display: none; /* Hide the full navigation on smaller screens */
+        position: absolute;
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: #0A1128;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
-   }
+
+    .navbar nav.active {
+        display: flex; /* Show the navigation when the 'active' class is added */
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar nav ul li {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar nav ul li a {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+    }
+
+    .navbar nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger menu on smaller screens */
+    }
+
+    /* Styles for when the hamburger menu is active (optional animations) */
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
 
 /* Home Style Section*/
 .home-section {
@@ -152,6 +191,12 @@ h2 {
 /* Styling for the home content container */
 .home-content {
     max-width: 900px;
+    background-color: rgb(41, 41, 41); /* Dark background */
+    margin: 20px auto; /* Center the container with some top/bottom margin */
+    padding: 30px; /* Add some internal spacing */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #f8f8f8; /* Light text color for contrast */
 }
 
 /* Styling for the name title */
@@ -262,8 +307,17 @@ h2 {
 }
 
 #portfolio h2 {
-    padding: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
     font-size: 5em;
+    background-color: rgb(41, 41, 41); /* Same background color as .project */
+    display: inline-block; /* To only take up the width of the text */
+    border-radius: 0.5em; /* Add rounded borders to the background */
+    color: white; /* Ensure text is visible on the dark background */
+    padding-left: 1.0em; /* Add some left padding for visual balance */
+    padding-right: 1.0em; /* Add some right padding for visual balance */
+    padding-top: 0.5em;
 }
 
 .projects-container {
@@ -343,7 +397,7 @@ h2 {
 }
 
 #contact .social-icons {
-    padding: 1em 0;
+    padding: 0em 0;
 }
 
 #contact a {

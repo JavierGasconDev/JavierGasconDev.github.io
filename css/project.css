@@ -5,6 +5,8 @@
     --highlight-color: #1c99ff;
 
     --text-color: #ffffff;
+
+    --core-dev-bg: rgb(46, 46, 46);
 }
 
 #project {
@@ -81,7 +83,7 @@ h2 {
 }
 
 .contribution-item {
-    background-color: #333;
+    background-color: var(--core-dev-bg);
     border-radius: 12px;
     padding: 25px;
     width: 800px; /* Fixed width */

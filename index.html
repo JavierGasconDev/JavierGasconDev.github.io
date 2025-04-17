@@ -19,6 +19,31 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.querySelector('.navbar nav');
+    
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+    
+                // Optional: Close the menu when a link is clicked (for smoother navigation)
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            });
+        </script>
     </header>
 
     <section id="home" class="home-section">
@@ -69,7 +94,7 @@
     </section>
 
     <section id="portfolio">
-        <h2 style="padding-top: 0;">Personal Projects</h2>
+        <h2>Personal Projects</h2>
         <div class="projects-container">
             <!-- Borova:The Forsaken Village -->
             <a href="./project/borova.html">
@@ -127,14 +152,13 @@
         <p class="contact-text">
             You can reach me via email at:
             <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>
+            Or through my social media:
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/linkedin-white.svg" alt="LinkedIn">
+                </a>
+            </div>
         </p>
-    
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank" rel="noopener noreferrer">
-                <img src="assets/icons/linkedin-white.svg" alt="LinkedIn">
-            </a>
-        </div>
-    
         <p class="copyright">
             &copy; 2025 Javier Gascón Pinedo. All rights reserved.
         </p>
