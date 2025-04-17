@@ -55,4 +55,7 @@
     #portfolio {
         padding-top: 3em;
     }
+    #portfolio h2{
+        font-size: 2em;
+    }
 }

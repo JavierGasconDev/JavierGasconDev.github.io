@@ -315,8 +315,6 @@ h2 {
     display: inline-block; /* To only take up the width of the text */
     border-radius: 0.5em; /* Add rounded borders to the background */
     color: white; /* Ensure text is visible on the dark background */
-    padding-left: 1.0em; /* Add some left padding for visual balance */
-    padding-right: 1.0em; /* Add some right padding for visual balance */
     padding-top: 0.5em;
 }
 
@@ -432,6 +430,10 @@ h2 {
     .social-icon {
         width: 25px;
         height: 25px;
+    }
+
+    #portfolio h2{
+        font-size: 3.4em;
     }
 }
 
