@@ -16,7 +16,29 @@ document.addEventListener('DOMContentLoaded', () => {
             sections: {
                 core: 'Core Development Work',
                 contact: 'Contact'
-            }
+            },
+            contributions: [
+                {
+                    title: 'Core Gameplay Mechanics & Narrative Integration',
+                    intro: 'I was responsible for designing and implementing the core gameplay mechanics that drive the player experience in Borova. This involved:',
+                    bullets: [
+                        '<b>Player Movement and Interaction:</b> Implementing smooth first-person controls, object interaction systems, and puzzle mechanics using both C++ and Blueprints.',
+                        '<b>Narrative Delivery Systems:</b> Developing systems for environmental storytelling, notes, documents, and narrative flow.',
+                        '<b>Inventory and Item Management:</b> Creating a functional inventory system for puzzle solving and progression.'
+                    ],
+                    outro: 'A key focus was ensuring that the gameplay mechanics seamlessly integrated with the narrative.'
+                },
+                {
+                    title: 'Psychological Horror Elements & Puzzles',
+                    intro: 'To achieve the desired psychological horror experience, I designed and implemented various elements, including:',
+                    bullets: [
+                        '<b>Puzzle Integration:</b> Thematically relevant puzzles tied to exploration and narrative.',
+                        '<b>Atmospheric Sound Design Implementation:</b> Implementing audio systems to enhance tension and unease.',
+                        '<b>Visual and Subtle Horror Techniques:</b> Environmental changes and subtle effects instead of pure jump scares.'
+                    ],
+                    outro: 'The focus was on creating a sustained atmosphere of dread and suspense.'
+                }
+            ]
         },
         es: {
             nav: ['Inicio', 'Trabajo', 'Currículum', 'Contacto'],
@@ -27,9 +49,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Desarrollado íntegramente en <b>Unreal Engine</b>, Borova aprovecha las potentes herramientas del motor para lograr una alta fidelidad visual, diseño atmosférico y entornos interactivos. El proyecto integra <b>C++</b> para los sistemas principales de juego y <b>Blueprints</b> para prototipado rápido y diseño de niveles, permitiendo un flujo de trabajo flexible y eficiente.'
             ],
             sections: {
-                core: 'Trabajo Principal de Desarrollo',
+                core: 'Trabajo Principal del Desarrollo',
                 contact: 'Contacto'
-            }
+            },
+            contributions: [
+                {
+                    title: 'Mecánicas de Juego Principales e Integración Narrativa',
+                    intro: 'Fui responsable de diseñar e implementar las mecánicas principales que definen la experiencia del jugador en Borova:',
+                    bullets: [
+                        '<b>Movimiento e Interacción del Jugador:</b> Controles en primera persona, interacción con objetos y puzles.',
+                        '<b>Sistemas de Narrativa:</b> Narrativa ambiental, notas y control del flujo de información.',
+                        '<b>Inventario y Gestión de Objetos:</b> Sistema de inventario para progresión y resolución de puzles.'
+                    ],
+                    outro: 'El objetivo principal fue integrar jugabilidad y narrativa de forma coherente.'
+                },
+                {
+                    title: 'Elementos de Terror Psicológico y Puzles',
+                    intro: 'Para lograr una experiencia de terror psicológico, diseñé e implementé:',
+                    bullets: [
+                        '<b>Diseño de Puzles:</b> Puzles coherentes con la narrativa.',
+                        '<b>Implementación de Sonido Ambiental:</b> Uso del sistema de audio para generar tensión.',
+                        '<b>Técnicas Visuales Sutiles:</b> Cambios ambientales y efectos psicológicos.'
+                    ],
+                    outro: 'El enfoque fue mantener una atmósfera constante de inquietud y suspense.'
+                }
+            ]
         }
     };
 
@@ -58,6 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // SECTION TITLES
         document.querySelector('#project h2').textContent = texts[currentLang].sections.core;
         document.querySelector('#contact h2').textContent = texts[currentLang].sections.contact;
+
+        // CONTRIBUTIONS
+        document.querySelectorAll('.contribution-item').forEach((item, i) => {
+            const data = texts[currentLang].contributions[i];
+            item.querySelector('h3').textContent = data.title;
+            item.querySelector('p').textContent = data.intro;
+
+            const lis = item.querySelectorAll('ul li');
+            lis.forEach((li, index) => {
+                li.innerHTML = data.bullets[index];
+            });
+
+            item.querySelectorAll('p')[1].textContent = data.outro;
+        });
 
         updateLangButton();
     }
