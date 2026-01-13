@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const texts = {
         en: {
             nav: ['Profile', 'Skills', 'Projects', 'Resume', 'Contact'],
+            sections: {
+                skills: 'Skills',
+                projects: 'Personal Projects',
+                contact: 'Contact'
+            },
             home: [
                 'Enthusiastic <b>Game Development Programmer</b> with strong skills in Unreal Engine 5 and Unity. My Multimedia Engineering background has provided me with a solid foundation and experience in programming game mechanics and systems through various university projects. I am actively seeking Programmer roles in Mobile and PC game development, using Unity or Unreal Engine.',
                 'This website serves as my personal portfolio, showcasing the video games I have contributed to as a programmer. Feel free to explore the projects section to learn more about my involvement and the technologies I\'ve utilized.',
@@ -24,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             projects: {
                 'proj-borova': {
                     title: 'Borova: The Forsaken Village',
-                    description: 'My Final Degree Project: an exploration and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.'
+                    description: 'My Final Degree Project: a psychological horror and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.'
                 },
                 'proj-relicraider': {
                     title: 'Relic Raider',
@@ -34,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         es: {
             nav: ['Perfil', 'Habilidades', 'Proyectos', 'Currículum', 'Contacto'],
+            sections: {
+                skills: 'Habilidades',
+                projects: 'Proyectos Personales',
+                contact: 'Contacto'
+            },
             home: [
                 'Apasionado <b>Programador de Desarrollo de Videojuegos</b> con fuertes habilidades en Unreal Engine 5 y Unity. Mi formación en Ingeniería Multimedia me ha proporcionado una base sólida y experiencia en programación de mecánicas y sistemas de juegos a través de varios proyectos universitarios. Estoy buscando activamente roles de Programador en desarrollo de juegos para Móvil y PC, usando Unity o Unreal Engine.',
                 'Este sitio web sirve como mi portafolio personal, mostrando los videojuegos a los que he contribuido como programador. Siéntete libre de explorar la sección de proyectos para conocer más sobre mi participación y las tecnologías que he utilizado.',
@@ -50,12 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
             contact: 'Puedes contactarme vía email en: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a> O a través de mis redes sociales:',
             projects: {
                 'proj-borova': {
-                    title: 'Borova: El Pueblo Abandonado',
-                    description: 'Mi Proyecto Fin de Grado: un videojuego de exploración y misterio desarrollado en Unreal Engine 5, incorporando C++ y Blueprints para mecánicas de juego y narrativa ambiental.'
+                    title: 'Borova: The Forsaken Village',
+                    description: 'Mi Proyecto de Fin de Grado se trata de un videojuego de terror psicológico y misterio desarrollado en Unreal Engine 5, usando C++ y Blueprints para las mecánicas de juego y la narrativa ambiental.'
                 },
                 'proj-relicraider': {
                     title: 'Relic Raider',
-                    description: 'Proyecto grupal universitario que consistió en la creación de un motor de juego personalizado en C++ desde cero, utilizado para desarrollar un videojuego con mecánicas similares a Zelda: Link\'s Awakening.'
+                    description: 'Proyecto grupal universitario que consistió en la creación de un motor de juego personalizado en C++ desde cero. Ello para desarrollar un videojuego con mecánicas similares a Zelda: Link\'s Awakening.'
                 }
             }
         }
@@ -88,6 +98,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Cambiar contacto
         document.querySelector('.contact-text').innerHTML = texts[currentLang].contact;
+
+        // Cambiar títulos de sección
+        document.getElementById('skills-title').textContent =texts[currentLang].sections.skills;
+
+        document.getElementById('projects-title').textContent = texts[currentLang].sections.projects;
+
+        document.getElementById('contact-title').textContent = texts[currentLang].sections.contact;
 
         // Cambiar proyectos
         for (const [projId, content] of Object.entries(texts[currentLang].projects)) {

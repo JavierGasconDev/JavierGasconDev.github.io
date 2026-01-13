@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const texts = {
         en: {
-            nav: ['Home', 'Work', 'Resume', 'Contact'],
+            nav: ['Home', 'Development', 'Resume', 'Contact'],
             title: 'Borova: The Forsaken Village',
             role: 'Primary Role: <b>Lead Developer</b>',
             description: [
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         es: {
             nav: ['Inicio', 'Trabajo', 'Currículum', 'Contacto'],
-            title: 'Borova: El Pueblo Abandonado',
+            title: 'Borova: The Forsaken Village',
             role: 'Rol principal: <b>Desarrollador Principal</b>',
             description: [
-                '<b>Borova: El Pueblo Abandonado</b> es mi Proyecto Fin de Grado, un videojuego de terror psicológico y misterio en primera persona desarrollado con Unreal Engine. El juego se centra en la exploración, la narrativa ambiental y el descubrimiento de una historia oscura dentro de un pueblo aislado e inquietante. Los jugadores recorren los paisajes inquietantes de Borova, reuniendo pistas y enfrentándose a desafíos psicológicos para descubrir los secretos ocultos del pueblo y el destino de sus habitantes.',
+                '<b>Borova: The Forsaken Village</b> es mi Proyecto de Fin de Grado, un videojuego de terror psicológico y misterio en primera persona desarrollado con Unreal Engine. El juego se centra en la exploración, la narrativa ambiental y el descubrimiento de una historia oscura dentro de un pueblo aislado e inquietante. Los jugadores recorren los paisajes inquietantes de Borova, reuniendo pistas y enfrentándose a desafíos psicológicos para descubrir los secretos ocultos del pueblo y el destino de sus habitantes.',
                 'Desarrollado íntegramente en <b>Unreal Engine</b>, Borova aprovecha las potentes herramientas del motor para lograr una alta fidelidad visual, diseño atmosférico y entornos interactivos. El proyecto integra <b>C++</b> para los sistemas principales de juego y <b>Blueprints</b> para prototipado rápido y diseño de niveles, permitiendo un flujo de trabajo flexible y eficiente.'
             ],
             sections: {
