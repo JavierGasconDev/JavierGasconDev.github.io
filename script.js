@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 contact: 'Contact'
             },
             home: [
-                'Enthusiastic <b>Game Development Programmer</b> with strong skills in Unreal Engine 5 and Unity. My Multimedia Engineering background has provided me with a solid foundation and experience in programming game mechanics and systems through various university projects. I am actively seeking Programmer roles in Mobile and PC game development, using Unity or Unreal Engine.',
+                'My background in Multimedia Engineering has provided me with a solid foundation in programming fundamentals, object-oriented design, data structures, and system logic. Through academic and personal projects, I have applied these principles to develop robust software systems, including game mechanics, tools, and engine-level features.',
                 'This website serves as my personal portfolio, showcasing the video games I have contributed to as a programmer. Feel free to explore the projects section to learn more about my involvement and the technologies I\'ve utilized.',
                 'My core skills include proficiency in C# and C++, experience with game engines like Unity and Unreal Engine 5, and a strong understanding of game development principles for both Mobile and PC platforms. I am accustomed to working under deadlines and possess a solid understanding of the video game development pipeline. Dive into the skills section below for a detailed breakdown.'
             ],
