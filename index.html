@@ -7,6 +7,7 @@
     <link rel="icon" href="./assets/icon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaquery-index.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="navbar">
@@ -17,8 +18,10 @@
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="assets/resume/resume_JavierGasconPinedo.pdf">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <button id="lang-toggle">Español</button>
             </ul>
         </nav>
+
         <button class="hamburger">
             <span class="line"></span>
             <span class="line"></span>
@@ -97,7 +100,7 @@
         <h2>Personal Projects</h2>
         <div class="projects-container">
             <!-- Borova:The Forsaken Village -->
-            <a href="./project/borova.html">
+            <a href="./project/borova.html" class="project-link" id="proj-borova">
                 <div class="project">
                     <img src="assets/portraits/borova.png" alt="Borova: The Forsaken Village Video Game Cover">
                     <h3>Borova: The Forsaken Village</h3>
@@ -106,14 +109,13 @@
                         <span class="tag">Unreal Engine</span>
                         <span class="tag">C++</span>
                         <span class="tag">Blueprints</span>
-
                     </span>
                     <p>My Final Degree Project: an exploration and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.</p>
                 </div>
             </a>
 
             <!-- MinaVR -->
-            <a href="./project/mina.html">
+            <a href="./project/mina.html" class="project-link" id="proj-mina">
                 <div class="project">
                     <img src="assets/portraits/minavr.png" alt="MinaVR">
                     <h3>MinaVR</h3>
@@ -128,9 +130,7 @@
             </a>
 
             <!-- Relic Raider -->
-            
-            <div><h2>Group Projects</h2></div>
-            <a href="./project/relicraider.html">
+            <a href="./project/relicraider.html" class="project-link" id="proj-relicraider">
                 <div class="project">
                     <img src="assets/portraits/Cartel_A4_RelicRaider.png" alt="Relic Raider">
                     <h3>Relic Raider</h3>

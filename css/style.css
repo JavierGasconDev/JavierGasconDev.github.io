@@ -440,3 +440,23 @@ a {
     text-decoration: none;
   }
 
+/* Botón de cambio de idioma */
+#lang-toggle {
+    background-color: var(--highlight-color); /* Color principal destacado */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Botón redondeado */
+    padding: 8px 18px; /* Tamaño cómodo */
+    font-family: 'Playpen Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 20px;
+}
+
+/* Efecto hover */
+#lang-toggle:hover {
+    background-color: #005aa8; /* Un azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Pequeño efecto de crecimiento */
+}
