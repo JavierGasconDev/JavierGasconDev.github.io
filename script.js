@@ -26,10 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Borova: The Forsaken Village',
                     description: 'My Final Degree Project: an exploration and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.'
                 },
-                'proj-mina': {
-                    title: 'MinaVR',
-                    description: 'Small virtual reality experience videogame project for a university virtual reality course, created in Unreal Engine.'
-                },
                 'proj-relicraider': {
                     title: 'Relic Raider',
                     description: 'University group project involving the creation of a custom game engine in C++ from the ground up, used to develop a video game with mechanics similar to Zelda: Link\'s Awakening.'
@@ -56,10 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 'proj-borova': {
                     title: 'Borova: El Pueblo Abandonado',
                     description: 'Mi Proyecto Fin de Grado: un videojuego de exploración y misterio desarrollado en Unreal Engine 5, incorporando C++ y Blueprints para mecánicas de juego y narrativa ambiental.'
-                },
-                'proj-mina': {
-                    title: 'MinaVR',
-                    description: 'Pequeño proyecto de videojuego de experiencia en realidad virtual para una asignatura universitaria de realidad virtual, creado en Unreal Engine.'
                 },
                 'proj-relicraider': {
                     title: 'Relic Raider',
