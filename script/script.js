@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Java',
                 'Experience using Java for software development, applying object-oriented principles, data structures, and problem-solving in academic projects.'
             ],
-            contact: 'You can reach me via email at: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a> Or through my social media:',
+            contact: 'You can reach me via email at: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>',
             projects: {
                 'proj-borova': {
                     title: 'Borova: The Forsaken Village',
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Java',
                 'Experiencia con Java en el desarrollo de software, aplicando principios de programación orientada a objetos, estructuras de datos y resolución de problemas.'
             ],
-            contact: 'Puedes contactarme vía email en: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a> O a través de mis redes sociales:',
+            contact: 'Puedes contactarme vía email en: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>',
             projects: {
                 'proj-borova': {
                     title: 'Borova: The Forsaken Village',
