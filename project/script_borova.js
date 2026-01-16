@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             role: 'Primary Role: <b>Lead Developer</b>',
             description: [
                 '<b>Borova: The Forsaken Village</b> is my Final Degree Project, a first-person psychological horror and mystery game developed using Unreal Engine. The game focuses on exploration, environmental storytelling, and unraveling a dark narrative within an isolated and unsettling village. Players navigate the eerie landscapes of Borova, piecing together clues and facing psychological challenges to uncover the village\'s hidden secrets and the fate of its forsaken inhabitants.',
-                'Developed entirely within <b>Unreal Engine</b>, Borova leverages the engine\'s robust tools for visual fidelity, atmospheric design, and interactive environments. The project integrates both <b>C++</b> for core gameplay systems and <b>Blueprints</b> for rapid prototyping and level design, allowing for a flexible and efficient development workflow.'
+                'Developed entirely within <b>Unreal Engine 5</b>.'
             ],
             sections: {
                 core: 'Core Development Work',
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             role: 'Rol principal: <b>Desarrollador Principal</b>',
             description: [
                 '<b>Borova: The Forsaken Village</b> es mi Proyecto de Fin de Grado, un videojuego de terror psicológico y misterio en primera persona desarrollado con Unreal Engine. El juego se centra en la exploración, la narrativa ambiental y el descubrimiento de una historia oscura dentro de un pueblo aislado e inquietante. Los jugadores recorren los paisajes inquietantes de Borova, reuniendo pistas y enfrentándose a desafíos psicológicos para descubrir los secretos ocultos del pueblo y el destino de sus habitantes.',
-                'Desarrollado íntegramente en <b>Unreal Engine</b>, Borova aprovecha las potentes herramientas del motor para lograr una alta fidelidad visual, diseño atmosférico y entornos interactivos. El proyecto integra <b>C++</b> para los sistemas principales de juego y <b>Blueprints</b> para prototipado rápido y diseño de niveles, permitiendo un flujo de trabajo flexible y eficiente.'
+                'Desarrollado íntegramente en <b>Unreal Engine 5</b>.'
             ],
             sections: {
                 core: 'Trabajo Principal del Desarrollo',
