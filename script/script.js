@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navMenu = document.querySelector('.navbar nav');
     const langToggle = document.getElementById('lang-toggle');
 
-    
+
     // --- Textos en ambos idiomas ---
     const texts = {
         en: {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentLang = 'en'; // idioma inicial
 
     // --- Cambio de idioma ---
-    langToggle.addEventListener('click', function() {
+    langToggle.addEventListener('click', function () {
         currentLang = currentLang === 'en' ? 'es' : 'en';
 
         // Cambiar texto del botón
@@ -112,15 +112,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Cambiar skills
         document.querySelectorAll('.skills-container .skill').forEach((skill, i) => {
-            skill.querySelector('h3').textContent = texts[currentLang].skills[i*2];
-            skill.querySelector('p').innerHTML = texts[currentLang].skills[i*2 + 1];
+            skill.querySelector('h3').textContent = texts[currentLang].skills[i * 2];
+            skill.querySelector('p').innerHTML = texts[currentLang].skills[i * 2 + 1];
         });
 
         // Cambiar contacto
         document.querySelector('.contact-text').innerHTML = texts[currentLang].contact;
 
         // Cambiar títulos de sección
-        document.getElementById('skills-title').textContent =texts[currentLang].sections.skills;
+        document.getElementById('skills-title').textContent = texts[currentLang].sections.skills;
 
         document.getElementById('projects-title').textContent = texts[currentLang].sections.projects;
 
@@ -134,5 +134,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 proj.querySelector('p').innerHTML = content.description;
             }
         }
+    });
+    // Scroll Animation - Intersection Observer
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    // Select elements to animate
+    const elementsToAnimate = document.querySelectorAll('.skill, .project-card, .contribution-item, .home-content, h2, .contact-text, .section-title');
+    elementsToAnimate.forEach((el) => {
+        el.classList.add('reveal');
+        observer.observe(el);
     });
 });

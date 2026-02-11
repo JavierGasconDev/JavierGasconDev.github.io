@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javier Gascón Pinedo</title>
     <link rel="icon" href="./assets/icon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mediaquery-index.css">
     <script src="./script/script.js"></script>
 </head>
+
 <body>
     <header class="navbar">
         <nav>
@@ -29,18 +30,18 @@
         </button>
 
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 const hamburger = document.querySelector('.hamburger');
                 const navMenu = document.querySelector('.navbar nav');
-    
-                hamburger.addEventListener('click', function() {
+
+                hamburger.addEventListener('click', function () {
                     hamburger.classList.toggle('active');
                     navMenu.classList.toggle('active');
                 });
-    
+
                 // Optional: Close the menu when a link is clicked (for smoother navigation)  a
                 navMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', function() {
+                    link.addEventListener('click', function () {
                         hamburger.classList.remove('active');
                         navMenu.classList.remove('active');
                     });
@@ -52,9 +53,12 @@
     <section id="home" class="home-section">
         <div class="home-content">
             <h1 class="name-title">Javier Gascón Pinedo</h1>
-            <p class="description"> Software Programmer with a background in Multimedia Engineering, focused on problem-solving, system design, and developing interactive applications using C++, C#, and Java.</p>
+            <p class="description"> Software Programmer with a background in Multimedia Engineering, focused on
+                problem-solving, system design, and developing interactive applications using C++, C#, and Java.</p>
 
-            <p class="description">This website serves as my personal portfolio, showcasing the video games I have contributed to as a programmer. Feel free to explore the projects section to learn more about my involvement and the technologies I've utilized.</p>
+            <p class="description">This website serves as my personal portfolio, showcasing the video games I have
+                contributed to as a programmer. Feel free to explore the projects section to learn more about my
+                involvement and the technologies I've utilized.</p>
 
         </div>
     </section>
@@ -125,36 +129,57 @@
         <div class="projects-container">
             <!-- Borova:The Forsaken Village -->
             <a href="./project/borova.html" class="project-link" id="proj-borova">
-                <div class="project">
-                    <img src="assets/portraits/borova.png" alt="Borova: The Forsaken Village Video Game Cover">
-                    <h3>Borova: The Forsaken Village</h3>
-                    <span class="tags">
-                        <span class="tag">TFG</span>
-                        <span class="tag">Unreal Engine</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">Blueprints</span>
-                    </span>
-                    <p>My Final Degree Project: an exploration and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.</p>
+                <div class="project-card">
+                    <div class="project-image-box">
+                        <img src="assets/portraits/borova.png" alt="Borova: The Forsaken Village Video Game Cover">
+                    </div>
+                    <div class="project-content-box">
+                        <h3>Borova: The Forsaken Village</h3>
+                        <div class="tags">
+                            <span class="tag">TFG</span>
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Blueprints</span>
+                        </div>
+                        <p>My Final Degree Project: an exploration and mystery video game developed using Unreal Engine
+                            5,
+                            incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.</p>
+                        <div class="tech-stack-box">
+                            <span class="tech-label">UE5</span>
+                            <span class="tech-divider"></span>
+                            <span class="tech-label">C++</span>
+                        </div>
+                    </div>
                 </div>
             </a>
 
 
             <!-- Relic Raider -->
             <a href="./project/relicraider.html" class="project-link" id="proj-relicraider">
-                <div class="project">
-                    <img src="assets/portraits/Cartel_A4_RelicRaider.png" alt="Relic Raider">
-                    <h3>Relic Raider</h3>
-                    <span class="tags">
-                        <span class="tag">University Group Project</span>
-                        <span class="tag">Custom Game Engine (From Scratch)</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">Similar to Zelda: Link's Awakening</span>
-                    </span>
-                    <p>University group project involving the creation of a custom game engine in C++ from the ground up, used to develop a video game with mechanics similar to Zelda: Link's Awakening.</p>
+                <div class="project-card">
+                    <div class="project-image-box">
+                        <img src="assets/portraits/Cartel_A4_RelicRaider.png" alt="Relic Raider">
+                    </div>
+                    <div class="project-content-box">
+                        <h3>Relic Raider</h3>
+                        <div class="tags">
+                            <span class="tag">University Group Project</span>
+                            <span class="tag">Custom Game Engine</span>
+                            <span class="tag">C++</span>
+                        </div>
+                        <p>University group project involving the creation of a custom game engine in C++ from the
+                            ground
+                            up, used to develop a video game with mechanics similar to Zelda: Link's Awakening.</p>
+                        <div class="tech-stack-box">
+                            <span class="tech-label">C++</span>
+                            <span class="tech-divider"></span>
+                            <span class="tech-label">OpenGL</span>
+                        </div>
+                    </div>
                 </div>
             </a>
         </div>
-        
+
     </section>
 
 
@@ -163,15 +188,17 @@
         <p class="contact-text">
             You can reach me via email at:
             <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/icons/linkedin-white.svg" alt="LinkedIn">
-                </a>
-            </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank"
+                rel="noopener noreferrer">
+                <img src="assets/icons/linkedin-white.svg" alt="LinkedIn">
+            </a>
+        </div>
         </p>
         <p class="copyright">
             &copy; 2025 Javier Gascón Pinedo. All rights reserved.
         </p>
     </section>
 </body>
+
 </html>
