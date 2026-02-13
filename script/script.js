@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
             contact: 'You can reach me via email at: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>',
             projects: {
+
                 'proj-borova': {
                     title: 'Borova: The Forsaken Village',
                     description: 'My Final Degree Project: a psychological horror and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.'
@@ -44,6 +45,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 'proj-relicraider': {
                     title: 'Relic Raider',
                     description: 'University group project involving the creation of a custom game engine in C++ from the ground up, used to develop a video game with mechanics similar to Zelda: Link\'s Awakening.'
+                },
+                'proj-unity-pathway': {
+                    title: 'Unity Junior Programmer Pathway',
+                    description: 'Currently focusing on expanding my game development skills by following the Unity Junior Programmer Pathway. I am developing multiple prototypes to master the engine\'s mechanics, physics, and programming patterns.'
                 }
             }
         },
@@ -79,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
             contact: 'Puedes contactarme vía email en: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>',
             projects: {
+
                 'proj-borova': {
                     title: 'Borova: The Forsaken Village',
                     description: 'Mi Proyecto de Fin de Grado se trata de un videojuego de terror psicológico y misterio desarrollado en Unreal Engine 5, usando C++ y Blueprints para las mecánicas de juego y la narrativa ambiental.'
@@ -86,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 'proj-relicraider': {
                     title: 'Relic Raider',
                     description: 'Proyecto grupal universitario que consistió en la creación de un motor de juego personalizado en C++ desde cero. Ello para desarrollar un videojuego con mecánicas similares a Zelda: Link\'s Awakening.'
+                },
+                'proj-unity-pathway': {
+                    title: 'Unity Junior Programmer Pathway',
+                    description: 'Actualmente enfocado en ampliar mis habilidades de desarrollo de videojuegos siguiendo el Unity Junior Programmer Pathway. Estoy desarrollando múltiples prototipos para dominar las mecánicas, físicas y patrones de programación del motor.'
                 }
             }
         }

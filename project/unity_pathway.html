@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Junior Programmer Pathway</title>
+    <link rel="icon" href="../assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <script src="script_unity_pathway.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#contributions">Development</a></li>
+                <li><a href="../assets/resume/resume_JavierGasconPinedo.pdf">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button id="lang-toggle">Español</button>
+            </ul>
+        </nav>
+        <button class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.querySelector('.navbar nav');
+
+                hamburger.addEventListener('click', function () {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Optional: Close the menu when a link is clicked (for smoother navigation)
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function () {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            });
+        </script>
+    </header>
+
+    <section id="project">
+        <div class="container">
+            <h1>Unity Junior Programmer Pathway</h1>
+
+            <div class="project-info">
+                <div class="social-icons">
+                    <a href="https://learn.unity.com/pathway/junior-programmer" class="social-icon" target="_blank"><img
+                            src="../assets/icons/unity.svg" alt="Unity Learn"></a>
+                </div>
+                <div class="info-item">
+                    <p>Primary Focus: <b>Unity Learning & Prototyping</b></p>
+                </div>
+            </div>
+            <span class="tags">
+                <span class="tag">Ongoing Training</span>
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Prototypes</span>
+                <span class="tag">Game Physics</span>
+                <span class="tag">Gameplay Programming</span>
+            </span>
+
+            <p class="project-description">
+                I am currently deepening my game development skills by following the official <b>Unity Junior Programmer
+                    Pathway</b>. This comprehensive course covers the fundamentals of programming in C# and game
+                development within the Unity engine. Through this pathway, I am building a strong foundation in writing
+                clean, efficient code and understanding the core systems of Unity.
+            </p>
+
+            <p class="project-description">
+                The pathway involves creating multiple <b>prototypes</b> that focus on specific mechanics, such as
+                player control, physics interactions, spawn management, and user interface design.
+            </p>
+
+            <div class="video-wrapper">
+                <!-- Placeholder for a video or image. Using a generic image for now if no video is available -->
+                <img src="../assets/icons/unity.svg" alt="Unity Prototypes"
+                    style="width: 100%; height: 100%; object-fit: contain; background: #222;">
+            </div>
+
+            <h2>Core Learning Outcomes</h2>
+            <div class="contributions" id="contributions">
+                <div class="contribution-item">
+                    <h3>C# Programming & Scripting</h3>
+                    <span class="tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Scripting API</span>
+                        <span class="tag">OOP</span>
+                    </span>
+                    <p>
+                        A major part of this pathway is mastering C# in the context of Unity. I have been working on:
+                    </p>
+                    <ul>
+                        <li><b>Variables and Methods:</b> Understanding the building blocks of scripts to control game
+                            object behavior.</li>
+                        <li><b>Control Flow:</b> Implementing logic using if-statements, loops, and switch cases to
+                            create dynamic gameplay.</li>
+                        <li><b>Object-Oriented Programming (OOP):</b> Applying principles like inheritance,
+                            encapsulation, and polymorphism to create modular and scalable code bases.</li>
+                    </ul>
+                    <p>
+                        This ensures that the code I write is not only functional but also maintainable and ready for
+                        more complex projects.
+                    </p>
+                </div>
+
+                <div class="contribution-item">
+                    <h3>Unity Engine Fundamentals</h3>
+                    <span class="tags">
+                        <span class="tag">Physics</span>
+                        <span class="tag">Collisions</span>
+                        <span class="tag">UI</span>
+                        <span class="tag">Audio</span>
+                    </span>
+                    <p>
+                        Beyond coding, I am gaining hands-on experience with the Unity Editor and its various
+                        subsystems:
+                    </p>
+                    <ul>
+                        <li><b>Physics and Collisions:</b> Using Rigidbody components and Colliders to simulate
+                            realistic physical interactions and trigger events.</li>
+                        <li><b>Input Handling:</b> Implementing player controls using both the legacy input manager and
+                            the new Input System.</li>
+                        <li><b>User Interface (UI):</b> Designing and programming menus, health bars, and score
+                            displays.</li>
+                        <li><b>Scene Management:</b> Handling game states, level transitions, and object
+                            instantiation/destruction.</li>
+                    </ul>
+                    <p>
+                        These prototypes serve as a practical application of theoretical concepts, allowing me to
+                        experiment and learn through doing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2 id="contact-title">Contact</h2>
+        <p class="contact-text">
+            You can reach me via email at:
+            <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank"
+                rel="noopener noreferrer">
+                <img src="../assets/icons/linkedin-white.svg" alt="LinkedIn">
+            </a>
+        </div>
+        </p>
+        <p class="copyright">
+            &copy; 2025 Javier Gascón Pinedo. All rights reserved.
+        </p>
+    </section>
+</body>
+
+</html>

@@ -289,7 +289,8 @@ p {
 .social-icon img {
     height: 24px;
     width: 24px;
-    filter: invert(1);
+    object-fit: contain;
+    filter: brightness(0) invert(1);
     /* Ensure icons are white if they aren't already */
 }
 
@@ -300,7 +301,7 @@ p {
 }
 
 .social-icon:hover img {
-    filter: invert(0);
+    filter: none;
     /* Make icons black on hover for contrast */
 }
 
@@ -471,10 +472,6 @@ p {
     color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: 2rem;
-    line-clamp: 4;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 .tech-stack-box {
