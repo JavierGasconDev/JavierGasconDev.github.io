@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Junior Programmer Pathway</title>
+    <link rel="icon" href="../assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/mediaquery-project.css">
+    <script src="script_unitypathway.js"></script>
+</head>
+
+<body>
+    <div id="health-bar-container">
+        <div id="health-bar-fill"></div>
+        <div id="health-bar-text">HP: 100/100</div>
+    </div>
+
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#contributions">Development</a></li>
+                <li><a href="../assets/resume/resume_JavierGasconPinedo.pdf">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button id="lang-toggle">Español</button>
+            </ul>
+        </nav>
+        <button class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.querySelector('.navbar nav');
+
+                hamburger.addEventListener('click', function () {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function () {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            });
+        </script>
+    </header>
+
+    <section id="project">
+        <div class="container fade-in">
+            <h1>Unity Junior Programmer Pathway</h1>
+
+            <div class="project-overview">
+                <div class="project-info">
+                    <div class="social-icons">
+                        <a href="https://learn.unity.com/pathway/junior-programmer" target="_blank" class="social-icon">
+                            <img src="../assets/icons/unity.svg" alt="Unity Pathway">
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <p>Role: <b>Programmer / Learner</b></p>
+                    </div>
+                </div>
+                <span class="tags">
+                    <span class="tag">Ongoing Training</span>
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Prototypes</span>
+                    <span class="tag">Game Physics</span>
+                    <span class="tag">Gameplay Programming</span>
+                </span>
+
+                <p class="project-description">
+                    Placeholder Description 1.
+                </p>
+
+                <!-- Optional: Image/Video placeholder -->
+                <div class="video-wrapper placeholder-wrapper" style="background:#ddd; height:450px; display:flex; align-items:center; justify-content:center; border-radius:12px; margin-top:20px;">
+                    <p style="color:#555; font-family:monospace; font-size:1.2rem;">[ ADD YOUR CERTIFICATE / SCREENSHOT HERE ]</p>
+                </div>
+            </div>
+
+            <h2 class="fade-in">Core Development Work</h2>
+            <div class="contributions" id="contributions">
+                
+                <div class="contribution-item fade-in">
+                    <h3>Title placeholder</h3>
+                    <span class="tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Scripting API</span>
+                        <span class="tag">OOP</span>
+                    </span>
+                    <p>Intro placeholder</p>
+                    <ul>
+                        <li>Bullet 1</li>
+                        <li>Bullet 2</li>
+                    </ul>
+                    <p>Outro placeholder</p>
+                </div>
+
+                <div class="contribution-item fade-in">
+                    <h3>Title placeholder</h3>
+                    <span class="tags">
+                        <span class="tag">Physics</span>
+                        <span class="tag">Collisions</span>
+                        <span class="tag">UI</span>
+                        <span class="tag">Audio</span>
+                    </span>
+                    <p>Intro placeholder</p>
+                    <ul>
+                        <li>Bullet 1</li>
+                        <li>Bullet 2</li>
+                    </ul>
+                    <p>Outro placeholder</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2 id="contact-title">Contact</h2>
+        <p class="contact-text">
+            You can reach me via email at:
+            <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/icons/linkedin-white.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <p class="copyright">
+            &copy; 2025 Javier Gascón Pinedo. All rights reserved.
+        </p>
+    </section>
+</body>
+</html>

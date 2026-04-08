@@ -10,14 +10,19 @@
     <script src="./script/script.js"></script>
 </head>
 <body>
+    <div id="health-bar-container">
+        <div id="health-bar-fill"></div>
+        <div id="health-bar-text">HP: 100/100</div>
+    </div>
+
     <header class="navbar">
         <nav>
             <ul>
-                <li><a href="#home">Profile</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="assets/resume/resume_JavierGasconPinedo.pdf">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-lang-key="nav_profile">Profile</a></li>
+                <li><a href="#skills" data-lang-key="nav_skills">Skills</a></li>
+                <li><a href="#portfolio" data-lang-key="nav_projects">Projects</a></li>
+                <li><a href="assets/resume/resume_JavierGasconPinedo.pdf" data-lang-key="nav_resume">Resume</a></li>
+                <li><a href="#contact" data-lang-key="nav_contact">Contact</a></li>
                 <button id="lang-toggle">Español</button>
             </ul>
         </nav>
@@ -52,105 +57,190 @@
     <section id="home" class="home-section">
         <div class="home-content">
             <h1 class="name-title">Javier Gascón Pinedo</h1>
-            <p class="description"> Software Programmer with a background in Multimedia Engineering, focused on problem-solving, system design, and developing interactive applications using C++, C#, and Java.</p>
+            <p class="description" data-lang-key="home_intro"> Software Programmer with a background in Multimedia Engineering, focused on problem-solving, system design, and developing interactive applications using C++, C#, and Java.</p>
 
-            <p class="description">This website serves as my personal portfolio, showcasing the video games I have contributed to as a programmer. Feel free to explore the projects section to learn more about my involvement and the technologies I've utilized.</p>
+            <p class="description" data-lang-key="home_desc">This website serves as my personal portfolio, showcasing the video games I have contributed to as a programmer. Feel free to explore the projects section to learn more about my involvement and the technologies I've utilized.</p>
 
+            <div class="home-ctas">
+                <a href="#portfolio" class="btn-primary" data-lang-key="btn_projects">View Projects</a>
+                <a href="assets/resume/resume_JavierGasconPinedo.pdf" class="btn-secondary" target="_blank" data-lang-key="btn_resume">Download Resume</a>
+            </div>
         </div>
     </section>
 
     <section id="skills">
-        <h2 id="skills-title">Skills</h2>
-        <div class="skills-container">
-
-            <div class="skill">
-                <img src="assets/icons/windows.svg" alt="Software Development Logo">
-                <h3>Software Development</h3>
-                <p>
-                    Experience designing and implementing software systems with a focus on clean code,
-                    problem-solving, and maintainability across academic and personal projects.
-                </p>
+        <h2 id="skills-title" class="fade-in" data-lang-key="section_skills">Skills</h2>
+        <div class="inventory-grid">
+            
+            <!-- Skill 1 -->
+            <div class="inventory-slot skill fade-in" data-tooltip="Core Ability">
+                <div class="slot-inner">
+                    <img data-src="assets/icons/windows.svg" src="assets/icons/windows.svg" alt="Software Development Logo" class="lazy-img">
+                    <div class="slot-info">
+                        <h3 data-lang-key="skill_softdev_title">Software Development</h3>
+                        <p data-lang-key="skill_softdev_desc">
+                            Experience designing and implementing software systems with a focus on clean code,
+                            problem-solving, and maintainability across academic and personal projects.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <img src="assets/icons/gamepad.svg" alt="Game and Interactive Development Logo">
-                <h3>Game & Interactive Development</h3>
-                <p>
-                    Hands-on experience developing interactive applications and games for PC and mobile
-                    platforms, applying real-time logic, system design, and performance considerations.
-                </p>
+            <!-- Skill 2 -->
+            <div class="inventory-slot skill fade-in" data-tooltip="Core Ability">
+                <div class="slot-inner">
+                    <img data-src="assets/icons/gamepad.svg" src="assets/icons/gamepad.svg" alt="Game and Interactive Development Logo" class="lazy-img">
+                    <div class="slot-info">
+                        <h3 data-lang-key="skill_gamedev_title">Game & Interactive Development</h3>
+                        <p data-lang-key="skill_gamedev_desc">
+                            Hands-on experience developing interactive applications and games for PC and mobile
+                            platforms, applying real-time logic, system design, and performance considerations.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <img src="assets/icons/unreal.svg" alt="Game Engines Logo">
-                <h3>Game Engines (Unity & Unreal Engine 5)</h3>
-                <p>
-                    Experience working with Unity (C#) and Unreal Engine 5 (C++/Blueprints),
-                    developing gameplay systems, tools, and real-time interactive features.
-                </p>
+            <!-- Skill 3 -->
+            <div class="inventory-slot skill fade-in" data-tooltip="Tool">
+                <div class="slot-inner">
+                    <img data-src="assets/icons/unity.svg" src="assets/icons/unity.svg" alt="Game Engines Logo" class="lazy-img">
+                    <div class="slot-info">
+                        <h3 data-lang-key="skill_engines_title">Game Engines (Unity & Unreal Engine 5)</h3>
+                        <p data-lang-key="skill_engines_desc">
+                            Experience working with Unity (C#) and Unreal Engine 5 (C++/Blueprints),
+                            developing gameplay systems, tools, and real-time interactive features.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <img src="assets/icons/c++.svg" alt="C++ Logo">
-                <h3>C++</h3>
-                <p>
-                    Solid foundation in C++ with experience in object-oriented programming,
-                    memory management, and performance-oriented system design.
-                </p>
+            <!-- Skill 4 -->
+            <div class="inventory-slot skill fade-in" data-tooltip="Language">
+                <div class="slot-inner">
+                    <img data-src="assets/icons/c++.svg" src="assets/icons/c++.svg" alt="C++ Logo" class="lazy-img">
+                    <div class="slot-info">
+                        <h3 data-lang-key="skill_cpp_title">C++</h3>
+                        <p data-lang-key="skill_cpp_desc">
+                            Solid foundation in C++ with experience in object-oriented programming,
+                            memory management, and performance-oriented system design.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <img src="assets/icons/csharp.svg" alt="C# Logo">
-                <h3>C#</h3>
-                <p>
-                    Proficient in C# for developing application logic, game systems, and tools,
-                    mainly within Unity-based projects.
-                </p>
+            <!-- Skill 5 -->
+            <div class="inventory-slot skill fade-in" data-tooltip="Language">
+                <div class="slot-inner">
+                    <img data-src="assets/icons/csharp.svg" src="assets/icons/csharp.svg" alt="C# Logo" class="lazy-img">
+                    <div class="slot-info">
+                        <h3 data-lang-key="skill_csharp_title">C#</h3>
+                        <p data-lang-key="skill_csharp_desc">
+                            Proficient in C# for developing application logic, game systems, and tools,
+                            mainly within Unity-based projects.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <img src="assets/icons/java.svg" alt="Java Logo">
-                <h3>Java</h3>
-                <p>
-                    Experience using Java for software development, applying object-oriented principles,
-                    data structures, and problem-solving in academic projects.
-                </p>
+            <!-- Skill 6 -->
+            <div class="inventory-slot skill fade-in" data-tooltip="Language">
+                <div class="slot-inner">
+                    <img data-src="assets/icons/java-clean.svg" src="assets/icons/java-clean.svg" alt="Java Logo" class="lazy-img">
+                    <div class="slot-info">
+                        <h3 data-lang-key="skill_java_title">Java</h3>
+                        <p data-lang-key="skill_java_desc">
+                            Experience using Java for software development, applying object-oriented principles,
+                            data structures, and problem-solving in academic projects.
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
     <section id="portfolio">
-        <h2 id="projects-title">Personal Projects</h2>
+        <h2 id="projects-title" class="fade-in" data-lang-key="section_projects">Personal Projects</h2>
         <div class="projects-container">
             <!-- Borova:The Forsaken Village -->
             <a href="./project/borova.html" class="project-link" id="proj-borova">
-                <div class="project">
-                    <img src="assets/portraits/borova.png" alt="Borova: The Forsaken Village Video Game Cover">
-                    <h3>Borova: The Forsaken Village</h3>
-                    <span class="tags">
-                        <span class="tag">TFG</span>
-                        <span class="tag">Unreal Engine</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">Blueprints</span>
-                    </span>
-                    <p>My Final Degree Project: an exploration and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.</p>
+                <div class="game-card fade-in">
+                    <div class="card-media">
+                        <!-- Placeholder video, user needs to replace -->
+                        <video loop muted playsinline class="card-video lazy-video">
+                            <source data-src="assets/videos/borova_preview.mp4" type="video/mp4">
+                        </video>
+                        <img data-src="assets/portraits/borova.png" src="assets/portraits/borova.png" alt="Borova: The Forsaken Village Video Game Cover" class="card-image lazy-img">
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3 data-lang-key="proj_borova_title">Borova: The Forsaken Village</h3>
+                        <span class="tags">
+                            <span class="tag">TFG</span>
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Blueprints</span>
+                        </span>
+                        <p data-lang-key="proj_borova_desc">My Final Degree Project: an exploration and mystery video game developed using Unreal Engine 5, incorporating C++ and Blueprints for gameplay mechanics and environmental storytelling.</p>
+                        
+                        <div class="tech-overlay">
+                            <span class="tech-icon">UE5</span>
+                            <span class="tech-icon">C++</span>
+                        </div>
+                    </div>
                 </div>
             </a>
 
 
             <!-- Relic Raider -->
             <a href="./project/relicraider.html" class="project-link" id="proj-relicraider">
-                <div class="project">
-                    <img src="assets/portraits/Cartel_A4_RelicRaider.png" alt="Relic Raider">
-                    <h3>Relic Raider</h3>
-                    <span class="tags">
-                        <span class="tag">University Group Project</span>
-                        <span class="tag">Custom Game Engine (From Scratch)</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">Similar to Zelda: Link's Awakening</span>
-                    </span>
-                    <p>University group project involving the creation of a custom game engine in C++ from the ground up, used to develop a video game with mechanics similar to Zelda: Link's Awakening.</p>
+                <div class="game-card fade-in">
+                    <div class="card-media">
+                         <!-- Placeholder video, user needs to replace -->
+                         <video loop muted playsinline class="card-video lazy-video">
+                            <source data-src="assets/videos/relicraider_preview.mp4" type="video/mp4">
+                        </video>
+                        <img data-src="assets/portraits/Cartel_A4_RelicRaider.png" src="assets/portraits/Cartel_A4_RelicRaider.png" alt="Relic Raider" class="card-image lazy-img">
+                    </div>
+
+                    <div class="card-content">
+                        <h3 data-lang-key="proj_relicraider_title">Relic Raider</h3>
+                        <span class="tags">
+                            <span class="tag">University Group Project</span>
+                            <span class="tag">Custom Engine</span>
+                            <span class="tag">C++</span>
+                        </span>
+                        <p data-lang-key="proj_relicraider_desc">University group project involving the creation of a custom game engine in C++ from the ground up, used to develop a video game with mechanics similar to Zelda: Link's Awakening.</p>
+                    
+                        <div class="tech-overlay">
+                            <span class="tech-icon">C++</span>
+                            <span class="tech-icon">OpenGL</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Unity Junior Programmer Pathway -->
+            <a href="./project/unitypathway.html" class="project-link" id="proj-unitypathway">
+                <div class="game-card fade-in">
+                    <div class="card-media" style="background:var(--nintendo-dark); display:flex; align-items:center; justify-content:center;">
+                        <img data-src="assets/icons/unity.svg" src="assets/icons/unity.svg" alt="Unity Logo" class="card-image lazy-img" style="width:50%; height:auto; opacity:0.8;">
+                    </div>
+
+                    <div class="card-content">
+                        <h3 data-lang-key="proj_unitypathway_title">Unity Junior Programmer Pathway</h3>
+                        <span class="tags">
+                            <span class="tag">Certification</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                        </span>
+                        <p data-lang-key="proj_unitypathway_desc">Completed the official Junior Programmer Pathway, covering everything from core C# programming to OOP, functional UIs, and data persistence in engine.</p>
+                    
+                        <div class="tech-overlay">
+                            <span class="tech-icon">Unity C#</span>
+                            <span class="tech-icon">JSON</span>
+                        </div>
+                    </div>
                 </div>
             </a>
         </div>
@@ -158,17 +248,17 @@
     </section>
 
 
-    <section id="contact">
-        <h2 id="contact-title">Contact</h2>
-        <p class="contact-text">
-            You can reach me via email at:
+    <section id="contact" class="fade-in">
+        <h2 id="contact-title" data-lang-key="section_contact">Contact</h2>
+        <div class="contact-text">
+            <span data-lang-key="contact_text">You can reach me via email at:</span>
             <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/javier-gascon-pinedo/" class="social-icon" target="_blank" rel="noopener noreferrer">
                     <img src="assets/icons/linkedin-white.svg" alt="LinkedIn">
                 </a>
             </div>
-        </p>
+        </div>
         <p class="copyright">
             &copy; 2025 Javier Gascón Pinedo. All rights reserved.
         </p>

@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const langToggle = document.getElementById('lang-toggle');
     const navLinks = document.querySelectorAll('.navbar nav a');
+    const healthBarFill = document.getElementById('health-bar-fill');
+    const healthBarText = document.getElementById('health-bar-text');
 
     let currentLang = 'en';
 
@@ -133,4 +135,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     translate();
+
+    // Health Bar Logic
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        // Avoid division by zero on very short pages
+        const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        
+        if(healthBarFill) healthBarFill.style.width = scrollPercent + '%';
+        
+        if(healthBarText) {
+            const currentHP = Math.round(scrollPercent);
+            healthBarText.textContent = `HP: ${currentHP}/100`;
+        }
+    });
+
 });
