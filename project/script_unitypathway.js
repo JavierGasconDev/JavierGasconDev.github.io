@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     intro: 'Más allá de codificar, estoy adquiriendo experiencia práctica con el Editor de Unity y sus diversos subsistemas:',
                     bullets: [
                         '<b>Física y Colisiones:</b> Uso de componentes Rigidbody y Colliders para simular interacciones físicas reales y activar eventos (triggers).',
-                        '<b>Gestión de Ingreso (Input):</b> Implementación de los controles del jugador utilizando tanto el Input Manager clásico como el nuevo Input System.',
+                        '<b>Gestión de Entrada (Input):</b> Implementación de los controles del jugador utilizando tanto el Input Manager clásico como el nuevo Input System.',
                         '<b>Interfaz de Usuario (UI):</b> Diseño y programación de menús, barras de vida y marcadores de puntuación.',
                         '<b>Gestión de Escenas:</b> Manejo de estados del juego, transición entre niveles, e instanciación/destrucción de objetos.'
                     ],

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         en: {
             nav: ['Home', 'Development', 'Resume', 'Contact'],
             title: 'Borova: The Forsaken Village',
-            role: 'Primary Role: <b>Lead Developer</b>',
+            role: 'Primary Role: <b>Sole Developer</b>',
             contact: 'You can reach me via email at: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>',
             description: [
                 '<b>Borova: The Forsaken Village</b> is my Final Degree Project, a first-person psychological horror and mystery game developed using Unreal Engine, which received a final grade of <b>10/10</b>. The game focuses on exploration, environmental storytelling, and unraveling a dark narrative within an isolated and unsettling village. Players navigate the eerie landscapes of Borova, piecing together clues and facing psychological challenges to uncover the village\'s hidden secrets and the fate of its forsaken inhabitants.',
@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         es: {
-            nav: ['Inicio', 'Trabajo', 'Currículum', 'Contacto'],
+            nav: ['Inicio', 'Desarrollo', 'Currículum', 'Contacto'],
             title: 'Borova: The Forsaken Village',
-            role: 'Rol principal: <b>Desarrollador Único</b>',
+            role: 'Rol Principal: <b>Desarrollador Único</b>',
             contact: 'Puedes contactarme vía email en: <a href="mailto:javier.gascon.14@gmail.com">javier.gascon.14@gmail.com</a>',
             description: [
                 '<b>Borova: The Forsaken Village</b> es mi Proyecto de Fin de Grado, un videojuego de terror psicológico y misterio en primera persona desarrollado con Unreal Engine. El juego se centra en la exploración, la narrativa ambiental y el descubrimiento de una historia oscura dentro de un pueblo aislado e inquietante. Los jugadores recorren los paisajes inquietantes de Borova, reuniendo pistas y enfrentándose a desafíos psicológicos para descubrir los secretos ocultos del pueblo y el destino de sus habitantes.',
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     title: 'Mecánicas de Juego Principales e Integración Narrativa',
                     intro: 'Como desarrollador único del proyecto, fui responsable del diseño e implementación de todas las mecánicas principales de juego que definen la experiencia del jugador. Esto incluyó:',
                     bullets: [
-                        '<b>Movimiento e Interacción del Jugador:</b> Implementación de controles en primera persona fluidos, sistemas de interacción con objetos y mecánicas de puzles',
+                        '<b>Movimiento e Interacción del Jugador:</b> Implementación de controles en primera persona fluidos, sistemas de interacción con objetos y mecánicas de puzles.',
                         '<b>Diseño de IA enemiga y Comportamiento de juego:</b> Diseño y programación de inteligencia artificial enemiga capaz de detectar, perseguir y atacar al jugador, usando comportamientos basados en estados y lógica de decisiones orientada al gameplay.',
                         '<b>Sistemas de Narrativa:</b> Desarrollo de sistemas para contar historias ambientales, notas, documentos y flujo narrativo.',
                         '<b>Inventario y Gestión de Objetos:</b> Creación de un sistema de inventario funcional para la resolución de puzzles y la progresión del juego.'

@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
             section_contact: 'Contact',
 
             home_intro: 'Software Programmer with a background in Multimedia Engineering, focused on problem-solving, system design, and developing interactive applications using C++, C#, and Java.',
-            home_desc: 'This website serves as my personal portfolio, showcasing the video games I have contributed to as a programmer. Feel free to explore the projects section to learn more about my involvement and the technologies I\'ve utilized.',
+            home_desc: 'This website serves as my personal portfolio, showcasing the video games I have contributed to as a programmer. Feel free to explore the projects section to learn more about my involvement and the technologies I\'ve used.',
 
             skill_softdev_title: 'Software Development',
             skill_softdev_desc: 'Experience designing and implementing software systems with a focus on clean code, problem-solving, and maintainability across academic and personal projects.',
@@ -152,13 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
             section_contact: 'Contacto',
 
             home_intro: 'Programador de software con formación en Ingeniería Multimedia, enfocado en la resolución de problemas, el diseño de sistemas y el desarrollo de aplicaciones interactivas utilizando C++, C# y Java.',
-            home_desc: 'Este sitio web sirve como mi portafolio personal, mostrando los videojuegos a los que he contribuido como programador. Siéntete libre de explorar la sección de proyectos para conocer más sobre mi participación y las tecnologías que he utilizado.',
+            home_desc: 'Este sitio web sirve como mi portafolio personal, mostrando los videojuegos a los que he contribuido como programador. Te invito a explorar la sección de proyectos para conocer más sobre mi participación y las tecnologías que he utilizado.',
 
             skill_softdev_title: 'Desarrollo de Software',
             skill_softdev_desc: 'Experiencia en el diseño e implementación de sistemas de software, con enfoque en código limpio, resolución de problemas y mantenibilidad.',
 
-            skill_gamedev_title: 'Desarrollo de Juegos',
-            skill_gamedev_desc: 'Experiencia práctica en el desarrollo de aplicaciones interactivas y videojuegos para PC y móvil, aplicando lógica en tiempo real y diseño de sistemas.',
+            skill_gamedev_title: 'Desarrollo Interactivo y de Videojuegos',
+            skill_gamedev_desc: 'Experiencia práctica en el desarrollo de aplicaciones interactivas y videojuegos para PC y móvil, aplicando lógica en tiempo real, diseño de sistemas y optimización de rendimiento.',
 
             skill_engines_title: 'Motores de Juego (Unity y Unreal Engine 5)',
             skill_engines_desc: 'Experiencia trabajando con Unity (C#) y Unreal Engine 5 (C++/Blueprints), desarrollando sistemas de gameplay, herramientas y funcionalidades interactivas en tiempo real.',
@@ -170,13 +170,13 @@ document.addEventListener('DOMContentLoaded', function () {
             skill_csharp_desc: 'Dominio de C# para el desarrollo de lógica de aplicaciones, sistemas de juego y herramientas, principalmente en proyectos con Unity.',
 
             skill_java_title: 'Java',
-            skill_java_desc: 'Experiencia con Java en el desarrollo de software, aplicando principios de programación orientada a objetos, estructuras de datos y resolución de problemas.',
+            skill_java_desc: 'Experiencia con Java en el desarrollo de software, aplicando principios de programación orientada a objetos, estructuras de datos y resolución de problemas en proyectos académicos.',
 
             proj_borova_title: 'Borova: The Forsaken Village',
-            proj_borova_desc: 'Mi Proyecto de Fin de Grado se trata de un videojuego de terror psicológico y misterio desarrollado en Unreal Engine 5, usando C++ y Blueprints para las mecánicas de juego y la narrativa ambiental.',
+            proj_borova_desc: 'Mi Proyecto de Fin de Grado: un videojuego de terror psicológico y misterio desarrollado en Unreal Engine 5, usando C++ y Blueprints para las mecánicas de juego y la narrativa ambiental.',
 
             proj_relicraider_title: 'Relic Raider',
-            proj_relicraider_desc: 'Proyecto grupal universitario que consistió en la creación de un motor de juego personalizado en C++ desde cero. Ello para desarrollar un videojuego con mecánicas similares a Zelda: Link\'s Awakening.',
+            proj_relicraider_desc: 'Proyecto grupal universitario que consistió en la creación de un motor de juego personalizado en C++ desde cero, utilizado para desarrollar un videojuego con mecánicas similares a Zelda: Link\'s Awakening.',
 
             proj_unitypathway_title: 'Unity Junior Programmer Pathway',
             proj_unitypathway_desc: 'Completado el curso oficial Junior Programmer Pathway, abarcando desde fundamentos de C# hasta POO, interfaces (UIs) funcionales y persistencia de datos en el motor.',
