@@ -375,11 +375,53 @@ section {
 }
 
 /* --- Projects (Game Cards) --- */
+.projects-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto 3.5rem auto;
+    flex-wrap: wrap;
+    max-width: 900px;
+    padding: 0 10px;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    color: var(--nintendo-dark);
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    border-radius: 30px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: var(--card-shadow);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--nintendo-red);
+    color: var(--nintendo-red);
+    box-shadow: 0 6px 15px rgba(230, 0, 18, 0.08);
+}
+
+.filter-btn.active {
+    background-color: var(--nintendo-red);
+    border-color: var(--nintendo-red);
+    color: white;
+    box-shadow: 0 8px 20px rgba(230, 0, 18, 0.25);
+    transform: translateY(-2px);
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
+    width: 100%;
 }
 
 .project-link {
@@ -388,6 +430,18 @@ section {
     width: 100%;
     max-width: 900px;
     display: block;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-link.filtering-out {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.project-link.hidden {
+    display: none !important;
 }
 
 .game-card {

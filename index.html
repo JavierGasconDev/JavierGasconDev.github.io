@@ -162,9 +162,18 @@
 
     <section id="portfolio">
         <h2 id="projects-title" class="fade-in" data-lang-key="section_projects">Personal Projects</h2>
+
+        <!-- Filter Tabs -->
+        <div class="projects-filter fade-in">
+            <button class="filter-btn active" data-filter="all" data-lang-key="filter_all">All</button>
+            <button class="filter-btn" data-filter="cpp" data-lang-key="filter_cpp">C++</button>
+            <button class="filter-btn" data-filter="unreal" data-lang-key="filter_unreal">Unreal Engine</button>
+            <button class="filter-btn" data-filter="unity" data-lang-key="filter_unity">Unity</button>
+        </div>
+
         <div class="projects-container">
             <!-- Borova:The Forsaken Village -->
-            <a href="./project/borova.html" class="project-link" id="proj-borova">
+            <a href="./project/borova.html" class="project-link" id="proj-borova" data-engine="unreal">
                 <div class="game-card fade-in">
                     <div class="card-media">
                         <!-- Placeholder video, user needs to replace -->
@@ -194,7 +203,7 @@
 
 
             <!-- Relic Raider -->
-            <a href="./project/relicraider.html" class="project-link" id="proj-relicraider">
+            <a href="./project/relicraider.html" class="project-link" id="proj-relicraider" data-engine="cpp">
                 <div class="game-card fade-in">
                     <div class="card-media">
                          <!-- Placeholder video, user needs to replace -->
@@ -222,7 +231,7 @@
             </a>
 
             <!-- Unity Junior Programmer Pathway -->
-            <a href="./project/unitypathway.html" class="project-link" id="proj-unitypathway">
+            <a href="./project/unitypathway.html" class="project-link" id="proj-unitypathway" data-engine="unity">
                 <div class="game-card fade-in">
                     <div class="card-media" style="background:var(--nintendo-dark); display:flex; align-items:center; justify-content:center;">
                         <img data-src="assets/icons/unity.svg" src="assets/icons/unity.svg" alt="Unity Logo" class="card-image lazy-img" style="width:50%; height:auto; opacity:0.8;">

@@ -135,7 +135,11 @@ document.addEventListener('DOMContentLoaded', function () {
             proj_unitypathway_title: 'Unity Junior Programmer Pathway',
             proj_unitypathway_desc: 'Completed the official Junior Programmer Pathway, covering everything from core C# programming to OOP, functional UIs, and data persistence in engine.',
 
-            contact_text: 'You can reach me via email at:'
+            contact_text: 'You can reach me via email at:',
+            filter_all: 'All',
+            filter_cpp: 'C++',
+            filter_unreal: 'Unreal Engine',
+            filter_unity: 'Unity'
         },
         es: {
             nav_profile: 'Perfil',
@@ -181,7 +185,11 @@ document.addEventListener('DOMContentLoaded', function () {
             proj_unitypathway_title: 'Unity Junior Programmer Pathway',
             proj_unitypathway_desc: 'Completado el curso oficial Junior Programmer Pathway, abarcando desde fundamentos de C# hasta POO, interfaces (UIs) funcionales y persistencia de datos en el motor.',
 
-            contact_text: 'Puedes contactarme vía email en:'
+            contact_text: 'Puedes contactarme vía email en:',
+            filter_all: 'Todos',
+            filter_cpp: 'C++',
+            filter_unreal: 'Unreal Engine',
+            filter_unity: 'Unity'
         }
     };
 
@@ -234,6 +242,49 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             navbarItem.classList.remove('scrolled');
         }
+    });
+
+    // --- 5. Project Filtering Logic ---
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectLinks = document.querySelectorAll('.project-link');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filterValue = button.getAttribute('data-filter');
+
+            // Update active button state
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Apply fade-out animation first
+            projectLinks.forEach(link => {
+                link.classList.add('filtering-out');
+            });
+
+            // Wait for transition, then filter elements
+            setTimeout(() => {
+                projectLinks.forEach(link => {
+                    const engines = link.getAttribute('data-engine') || '';
+                    const engineList = engines.split(' ');
+
+                    if (filterValue === 'all' || engineList.includes(filterValue)) {
+                        link.classList.remove('hidden');
+                    } else {
+                        link.classList.add('hidden');
+                    }
+                });
+
+                // Trigger reflow for transition, then fade back in
+                // (Using requestAnimationFrame ensures the browser registers the display change before animating)
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        projectLinks.forEach(link => {
+                            link.classList.remove('filtering-out');
+                        });
+                    });
+                });
+            }, 350); // Matches the 0.35s CSS transition duration
+        });
     });
 
     // Initial Lang load
